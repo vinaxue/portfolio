@@ -1,0 +1,19 @@
+{
+  "name": "vinaxue.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinaxue/vinaxue.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinaxue/vinaxue.github.io/issues"
+  },
+  "homepage": "https://github.com/vinaxue/vinaxue.github.io#readme"
+}
