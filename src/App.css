@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.button-type:hover {
+  cursor: pointer;
+  color: #ffc04d;
+}
+
+ul {
+  margin: 5px;
+  padding-inline-start: 20px;
+}
+
+ul.dashed {
+  list-style-type: none;
+}
+
+ul.dashed>li {
+  text-indent: -5px;
+}
+
+ul.dashed>li:before {
+  content: "- ";
+  color: #c0c0c0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #ffc04d;
+  text-decoration: none;
+}
+
+nav {
+  text-align: right;
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  right: 20px;
+}
