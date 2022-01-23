@@ -106,7 +106,7 @@ class Introduction extends Component {
 									<div className='intro xanh-mono'>Hello, my name is </div>
 									<h1 className='name'>Yangle Xue,</h1>
 									<div className='intro xanh-mono'>also known as Vina.</div>
-									<div className='intro xanh-mono'>I am a junior studying Electrical and Computer Engineering and a future Software Developer. </div>
+									<div className='intro xanh-mono'>I am a senior studying Electrical and Computer Engineering and a future Software Developer. </div>
 								</div>
 							</div>
 						</Slide>
@@ -139,6 +139,7 @@ class Introduction extends Component {
 												<li className="list-item xanh-mono">Linux</li>
 												<li className="list-item xanh-mono">React.js</li>
 												<li className="list-item xanh-mono">Flask</li>
+												<li className="list-item xanh-mono">Swift</li>
 												<li className="list-item xanh-mono">MySQL Workbench</li>
 												<li className="list-item xanh-mono">HTML/CSS</li>
 												<li className="list-item xanh-mono">Bootstrap</li>
