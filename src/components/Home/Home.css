@@ -1,0 +1,29 @@
+.home {
+  line-height: 25px;
+  height: 60vh;
+  text-align: center;
+  position: relative;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-size: medium;
+  line-height: 30px;
+}
+
+p {
+  padding-bottom: 5px;
+}
+
+.georgetown {
+  display: inline;
+  color: #041e42;
+}
+
+.ut {
+  display: inline;
+  color: #bf5700;
+}
