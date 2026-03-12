@@ -21,11 +21,10 @@ class Header extends Component {
 
     getPageFromPath(path) {
         switch (path) {
-            case '/':
+            case '/home':
                 return 'HOME';
             case '/contact':
                 return 'CONTACT';
-            // Add more cases here as needed
             default:
                 return 'HOME';
         }
@@ -45,6 +44,13 @@ class Header extends Component {
     }
 
     render() {
+        const subtitlesByTheme = {
+            professional: "Full-Stack Developer",
+            human: "Yarn Enthusiast",
+            chaos: "???"
+        }
+        const subtitle = subtitlesByTheme[this.props.theme] || subtitlesByTheme.professional
+
         return (
             <div className="header">
                 <div className="menu-section">
@@ -60,7 +66,7 @@ class Header extends Component {
                         this.state.isMenuOpen && <div className="menu">
                             <ul className="menu-items">
                                 <li>
-                                    <Link to="/">Home</Link>
+                                    <Link to="/home">Home</Link>
                                 </li>
                                 <li>
                                     <Link to="/contact">Contact Me</Link>
@@ -80,6 +86,9 @@ class Header extends Component {
                 </div>
                 <div className="name">
                     Vina Xue
+                </div>
+                <div className="subtitle">
+                    {subtitle}
                 </div>
             </div>
         )

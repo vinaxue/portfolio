@@ -98,6 +98,15 @@
   font-family: "Simplifica", sans-serif;
 }
 
+.subtitle {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 500%);
+  font-size: large;
+  font-family: "Simplifica", sans-serif;
+}
+
 .menu-container {
   display: flex; /* Use flexbox for alignment */
   align-items: center; /* Center items vertically */
