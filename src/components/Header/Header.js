@@ -11,10 +11,36 @@ class Header extends Component {
         this.state = { isMenuOpen: false, currentPage: "HOME" }
 
         this.handleMenuButtonClick = this.handleMenuButtonClick.bind(this)
+        this.getPageFromPath = this.getPageFromPath.bind(this)
     }
 
     handleMenuButtonClick() {
         this.setState(prevState => ({ isMenuOpen: !prevState.isMenuOpen }));
+    }
+
+    getPageFromPath(path) {
+        switch (path) {
+            case '/':
+                return 'HOME';
+            case '/contact':
+                return 'CONTACT';
+            // Add more cases here as needed
+            default:
+                return 'HOME';
+        }
+    }
+
+    componentDidMount() {
+        const path = window.location.pathname;
+        this.setState({ currentPage: this.getPageFromPath(path) });
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        const path = window.location.pathname;
+        const newPage = this.getPageFromPath(path);
+        if (prevState.currentPage !== newPage) {
+            this.setState({ currentPage: newPage });
+        }
     }
 
     render() {
@@ -27,15 +53,16 @@ class Header extends Component {
                                 <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
                             </svg>
                         </button>
-                        <div className="current-page"> {this.state.currentPage}</div></div>
+                        <div className="current-page">{this.state.currentPage}</div>
+                    </div>
                     {
                         this.state.isMenuOpen && <div className="menu">
                             <ul className="menu-items">
                                 <li>
-                                    Home
+                                    <a href="/">Home</a>
                                 </li>
                                 <li>
-                                    Contact Me
+                                    <a href="/contact">Contact Me</a>
                                 </li>
                             </ul>
                         </div>

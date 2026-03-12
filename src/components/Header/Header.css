@@ -17,9 +17,10 @@
 }
 
 .menu {
-  background-color: #ffe4c477;
-  height: 200px;
-  width: 300px;
+  height: fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  background-color: rgba(var(--color-bg-primary-rgb), 0.7);
   position: absolute;
   top: 40px;
   left: 0;
@@ -29,8 +30,12 @@
 
 .menu-items {
   list-style-type: none;
-  margin: 0;
+  margin-inline: 20px;
   padding: 0;
+}
+
+.menu-items li {
+  margin-bottom: 10px;
 }
 
 .header-image-container {

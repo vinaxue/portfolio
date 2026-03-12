@@ -11,13 +11,13 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="home">
-                <div className="intro">
+            <div className="content">
+                <div className="content-text">
                     <p>
-                        Hey there! My name is Vina Xue. I'm currently a Master’s student in Computer Science at <div className="georgetown">Georgetown University</div>, diving deep into the exciting world of machine learning. I graduated from <div className="ut">the University of Texas, Austin</div> with a degree in Computer Engineering, and I've got some experience under my belt as a full-stack developer.
+                        Hey there! My name is Vina Xue. I got a Master degree in Computer Science from <div className="georgetown">Georgetown University</div> and a Bachelor's degree in Computer Engineering from <div className="ut">the University of Texas, Austin</div>. I've also got some full-stack development experience under my belt.
                     </p>
                     <p>
-                        If you want to chat or connect, feel free to reach out!
+                        If you want to chat or connect, feel free to <a href="/contact">reach out</a>!
                     </p>
                 </div>
             </div>
