@@ -9,7 +9,7 @@ class Contact extends Component {
         this.state = {}
     }
 
-    render() {
+    renderProfessional() {
         return (
             <div className="content">
                 <div className="content-text">
@@ -25,6 +25,29 @@ class Contact extends Component {
                 </div>
             </div>
         )
+    }
+
+    renderHuman() {
+        return <div></div>
+    }
+
+    renderChaos() {
+        return <div></div>
+    }
+
+    render() {
+        const theme = this.props.theme || "professional"
+
+        switch (theme) {
+            case "professional":
+                return this.renderProfessional()
+            case "human":
+                return this.renderHuman()
+            case "chaos":
+                return this.renderChaos()
+            default:
+                return this.renderProfessional()
+        }
     }
 }
 

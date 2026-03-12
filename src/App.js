@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import ThemeLanding from './components/ThemeLanding/ThemeLanding';
+import Resume from './components/Resume/Resume';
 
 function AppContent({ setTheme, theme }) {
   const location = useLocation();
@@ -22,8 +23,9 @@ function AppContent({ setTheme, theme }) {
       {!isLanding && <Header theme={theme} />}
       <Routes>
         <Route path="/" element={<ThemeLanding onSelectTheme={handleSelectTheme} />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/home" element={<Home theme={theme} />} />
+        <Route path="/contact" element={<Contact theme={theme} />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </>
   );
@@ -31,7 +33,7 @@ function AppContent({ setTheme, theme }) {
 
 function App() {
   const [theme, setTheme] = useState(
-    () => localStorage.getItem('theme') || 'classic'
+    () => localStorage.getItem('theme') || 'professional'
   );
 
   return (

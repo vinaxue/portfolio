@@ -1,5 +1,5 @@
 :root,
-[data-theme="classic"] {
+[data-theme="professional"] {
   --color-bg-primary: #e7e5df;
   --color-bg-primary-rgb: 231, 229, 223;
   --color-text-primary: #2a2b2a;
@@ -8,7 +8,7 @@
   --color-emphasize: #548687;
 }
 
-[data-theme="dark"] {
+[data-theme="human"] {
   --color-bg-primary: #1a1a2e;
   --color-bg-primary-rgb: 26, 26, 46;
   --color-text-primary: #e0e0e0;
@@ -17,7 +17,7 @@
   --color-emphasize: #7ec8e3;
 }
 
-[data-theme="ocean"] {
+[data-theme="chaos"] {
   --color-bg-primary: #cce7f0;
   --color-bg-primary-rgb: 204, 231, 240;
   --color-text-primary: #1a3a4a;
