@@ -1,6 +1,21 @@
 .header {
   position: relative;
+}
+
+.header-hero {
   height: 40vh;
+}
+
+.header-compact {
+  min-height: 0;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  background-color: var(--color-bg-primary);
+}
+
+.header-compact .top-nav-bar {
+  position: static;
+  margin: 0 20px;
 }
 
 .top-nav-bar {
@@ -13,7 +28,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 16px;
-  background-color: rgba(var(--color-bg-primary-rgb), 0.78);
+  background-color: rgba(var(--color-bg-primary-rgb), 0.4);
   backdrop-filter: blur(6px);
   border-radius: 6px;
 }
@@ -30,6 +45,27 @@
   font-family: "Simplifica", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.04em;
+}
+
+.top-nav-items-hero a {
+  color: var(--color-link-dark);
+}
+
+.top-nav-items-hero a:hover,
+.top-nav-items-hero a:focus {
+  color: var(--color-link-hover-dark);
+}
+
+.nav-brand a {
+  font-family: "Simplifica", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  color: var(--color-text-primary);
+}
+
+.header-compact .top-nav-items {
+  margin-left: auto;
 }
 
 .header-image-container {

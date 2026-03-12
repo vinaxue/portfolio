@@ -1,10 +1,12 @@
 :root,
 [data-theme="professional"] {
   --color-bg-primary: #e7e5df;
-  --color-bg-primary-rgb: 231, 229, 223;
+  --color-bg-primary-rgb: 212, 201, 169;
   --color-text-primary: #2a2b2a;
   --color-link: #a76d60;
+  --color-link-dark: #e6c9c3;
   --color-link-hover: #7a8450;
+  --color-link-hover-dark: #e7e5df;
   --color-emphasize: #548687;
 }
 

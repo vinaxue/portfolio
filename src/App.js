@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router";
 
 import './App.css';
 import './styles.css';
@@ -9,16 +9,24 @@ import Resume from './components/Resume/Resume';
 import Dashboard from './components/Dashboard/Dashboard';
 
 function AppContent() {
+  const location = useLocation();
+  const compactHeaderRoutes = ["/resume", "/dashboard"];
+  const headerVariant = compactHeaderRoutes.includes(location.pathname)
+    ? "compact"
+    : "hero";
+
   return (
     <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
+      <Header variant={headerVariant} />
+      <main className={`page-shell page-shell-${headerVariant}`}>
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </main>
     </>
   );
 }
