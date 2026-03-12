@@ -1,5 +1,35 @@
+.content {
+  line-height: 25px;
+  height: 60vh;
+  text-align: center;
+  position: relative;
+}
+
+.content-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-size: medium;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
+  font-weight: bold;
+}
+
 .App {
   text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 }
 
 .App-logo {
@@ -37,47 +67,7 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-.button-type:hover {
-  cursor: pointer;
-  color: #ffc04d;
-}
-
-ul {
-  margin: 5px;
-  padding-inline-start: 20px;
-}
-
-ul.dashed {
-  list-style-type: none;
-}
-
-ul.dashed>li {
-  text-indent: -5px;
-}
-
-ul.dashed>li:before {
-  content: "- ";
-  color: #c0c0c0;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover{
-  color: #ffc04d;
-  text-decoration: none;
-}
-
-nav {
-  text-align: right;
-  position: fixed;
-  top: 20px;
-  width: 100%;
-  right: 20px;
+.content {
+  justify-content: center;
+  align-items: center;
 }
