@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router";
 
 import headerImage from "../../res/header-image.jpg"
 import avatar from "../../res/avatar.jpg"
@@ -59,10 +60,10 @@ class Header extends Component {
                         this.state.isMenuOpen && <div className="menu">
                             <ul className="menu-items">
                                 <li>
-                                    <a href="/">Home</a>
+                                    <Link to="/">Home</Link>
                                 </li>
                                 <li>
-                                    <a href="/contact">Contact Me</a>
+                                    <Link to="/contact">Contact Me</Link>
                                 </li>
                             </ul>
                         </div>
