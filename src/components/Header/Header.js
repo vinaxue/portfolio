@@ -69,7 +69,7 @@ class Header extends Component {
                     }
                 </div>
                 <div className="header-image-container">
-                    <img className="header-image" src={headerImage} alt="Jiangxi Landscape Photo" />
+                    <img className="header-image" src={headerImage} alt="Jiangxi Landscape" />
                     <div className="header-image-credit">
                         Photo by <a className="header-image-credit-link" href="https://unsplash.com/@umbriferous?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Theodor Lundqvist</a> on <a className="header-image-credit-link" href="https://unsplash.com/photos/brown-wooden-houses-beside-river-WHhbYArwFt8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
                     </div>
