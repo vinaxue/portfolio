@@ -3,13 +3,7 @@ import React, { Component } from "react";
 import './Contact.css'
 
 class Contact extends Component {
-    constructor() {
-        super()
-
-        this.state = {}
-    }
-
-    renderProfessional() {
+    render() {
         return (
             <div className="content">
                 <div className="content-text">
@@ -25,29 +19,6 @@ class Contact extends Component {
                 </div>
             </div>
         )
-    }
-
-    renderHuman() {
-        return <div></div>
-    }
-
-    renderChaos() {
-        return <div></div>
-    }
-
-    render() {
-        const theme = this.props.theme || "professional"
-
-        switch (theme) {
-            case "professional":
-                return this.renderProfessional()
-            case "human":
-                return this.renderHuman()
-            case "chaos":
-                return this.renderChaos()
-            default:
-                return this.renderProfessional()
-        }
     }
 }
 

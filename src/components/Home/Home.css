@@ -12,5 +12,6 @@ p {
   color: #bf5700;
 }
 
-.content-text {
+.content {
+  margin-top: 20px;
 }

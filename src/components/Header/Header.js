@@ -7,28 +7,18 @@ import "./Header.css"
 
 class Header extends Component {
     render() {
-        const subtitlesByTheme = {
-            professional: "Full-Stack Developer",
-            human: "Yarn Enthusiast",
-            chaos: "???"
-        }
-        const subtitle = subtitlesByTheme[this.props.theme] || subtitlesByTheme.professional
-
-        const links = {
-            professional: [
-                { name: "Home", path: "/home" },
-                { name: "Resume", path: "/resume" },
-                { name: "Contact Me", path: "/contact" },
-            ],
-            human: [],
-            chaos: []
-        }
+        const links = [
+            { name: "Home", path: "/home" },
+            { name: "Dashboard", path: "/dashboard" },
+            { name: "Resume", path: "/resume" },
+            { name: "Contact Me", path: "/contact" },
+        ]
 
         return (
             <div className="header">
                 <div className="top-nav-bar">
                     <ul className="top-nav-items">
-                        {links[this.props.theme].map(link => (
+                        {links.map(link => (
                             <li key={link.path}>
                                 <Link to={link.path}>{link.name}</Link>
                             </li>
@@ -48,7 +38,7 @@ class Header extends Component {
                     Vina Xue
                 </div>
                 <div className="subtitle">
-                    {subtitle}
+                    Full-Stack Developer | Yarn Enthusiast | ???
                 </div>
             </div>
         )
