@@ -6,74 +6,24 @@ import avatar from "../../res/avatar.jpg"
 import "./Header.css"
 
 class Header extends Component {
-    constructor() {
-        super()
-
-        this.state = { isMenuOpen: false, currentPage: "HOME" }
-
-        this.handleMenuButtonClick = this.handleMenuButtonClick.bind(this)
-        this.getPageFromPath = this.getPageFromPath.bind(this)
-    }
-
-    handleMenuButtonClick() {
-        this.setState(prevState => ({ isMenuOpen: !prevState.isMenuOpen }));
-    }
-
-    getPageFromPath(path) {
-        switch (path) {
-            case '/home':
-                return 'HOME';
-            case '/contact':
-                return 'CONTACT';
-            default:
-                return 'HOME';
-        }
-    }
-
-    componentDidMount() {
-        const path = window.location.pathname;
-        this.setState({ currentPage: this.getPageFromPath(path) });
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-        const path = window.location.pathname;
-        const newPage = this.getPageFromPath(path);
-        if (prevState.currentPage !== newPage) {
-            this.setState({ currentPage: newPage });
-        }
-    }
-
     render() {
-        const subtitlesByTheme = {
-            professional: "Full-Stack Developer",
-            human: "Yarn Enthusiast",
-            chaos: "???"
-        }
-        const subtitle = subtitlesByTheme[this.props.theme] || subtitlesByTheme.professional
+        const links = [
+            { name: "Home", path: "/home" },
+            { name: "Dashboard", path: "/dashboard" },
+            { name: "Resume", path: "/resume" },
+            { name: "Contact Me", path: "/contact" },
+        ]
 
         return (
             <div className="header">
-                <div className="menu-section">
-                    <div className="menu-container">
-                        <button className="menu-button" onClick={this.handleMenuButtonClick}>
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
-                                <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
-                            </svg>
-                        </button>
-                        <div className="current-page">{this.state.currentPage}</div>
-                    </div>
-                    {
-                        this.state.isMenuOpen && <div className="menu">
-                            <ul className="menu-items">
-                                <li>
-                                    <Link to="/home">Home</Link>
-                                </li>
-                                <li>
-                                    <Link to="/contact">Contact Me</Link>
-                                </li>
-                            </ul>
-                        </div>
-                    }
+                <div className="top-nav-bar">
+                    <ul className="top-nav-items">
+                        {links.map(link => (
+                            <li key={link.path}>
+                                <Link to={link.path}>{link.name}</Link>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
                 <div className="header-image-container">
                     <img className="header-image" src={headerImage} alt="Jiangxi Landscape" />
@@ -88,7 +38,7 @@ class Header extends Component {
                     Vina Xue
                 </div>
                 <div className="subtitle">
-                    {subtitle}
+                    Full-Stack Developer | Yarn Enthusiast | ???
                 </div>
             </div>
         )

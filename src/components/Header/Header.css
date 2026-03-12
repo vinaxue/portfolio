@@ -3,39 +3,33 @@
   height: 40vh;
 }
 
-.menu-section {
+.top-nav-bar {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 12px;
+  left: 20px;
+  right: 20px;
   z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: rgba(var(--color-bg-primary-rgb), 0.78);
+  backdrop-filter: blur(6px);
+  border-radius: 6px;
 }
 
-.menu-button {
-  border: none;
-  padding: 5px;
-  height: 30px;
-}
-
-.menu {
-  height: fit-content;
-  width: fit-content;
-  white-space: nowrap;
-  background-color: rgba(var(--color-bg-primary-rgb), 0.7);
-  position: absolute;
-  top: 40px;
-  left: 0;
-  text-align: left;
-  padding: 10px;
-}
-
-.menu-items {
+.top-nav-items {
+  display: flex;
+  gap: 18px;
   list-style-type: none;
-  margin-inline: 20px;
+  margin: 0;
   padding: 0;
 }
 
-.menu-items li {
-  margin-bottom: 10px;
+.top-nav-items a {
+  font-family: "Simplifica", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
 }
 
 .header-image-container {
@@ -46,7 +40,7 @@
 
 .header-image {
   height: 40vh;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   object-position: 50% 25%;
   opacity: 0.8;
@@ -105,16 +99,4 @@
   transform: translate(-50%, 500%);
   font-size: large;
   font-family: "Simplifica", sans-serif;
-}
-
-.menu-container {
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Center items vertically */
-}
-
-.current-page {
-  display: inline;
-  margin-left: 10px;
-  font-family: "Simplifica", sans-serif;
-  font-size: larger;
 }

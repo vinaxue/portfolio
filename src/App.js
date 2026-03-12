@@ -1,43 +1,33 @@
-import { useState } from 'react';
-import { BrowserRouter, Route, Routes, useLocation } from "react-router";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 
 import './App.css';
 import './styles.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
-import ThemeLanding from './components/ThemeLanding/ThemeLanding';
+import Resume from './components/Resume/Resume';
+import Dashboard from './components/Dashboard/Dashboard';
 
-function AppContent({ setTheme, theme }) {
-  const location = useLocation();
-  const isLanding = location.pathname === '/';
-
-  function handleSelectTheme(themeId) {
-    setTheme(themeId);
-    localStorage.setItem('theme', themeId);
-  }
-
+function AppContent() {
   return (
     <>
-      {!isLanding && <Header theme={theme} />}
+      <Header />
       <Routes>
-        <Route path="/" element={<ThemeLanding onSelectTheme={handleSelectTheme} />} />
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </>
   );
 }
 
 function App() {
-  const [theme, setTheme] = useState(
-    () => localStorage.getItem('theme') || 'classic'
-  );
-
   return (
-    <div className="App" data-theme={theme}>
+    <div className="App">
       <BrowserRouter>
-        <AppContent setTheme={setTheme} theme={theme} />
+        <AppContent />
       </BrowserRouter>
     </div>
   );
