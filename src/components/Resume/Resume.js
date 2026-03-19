@@ -1,5 +1,5 @@
 import React from 'react'
-import resumePdf from '../../res/YXResume Feb26.pdf'
+import resumePdf from '../../res/YXResume.pdf'
 import './Resume.css'
 
 function Resume() {
