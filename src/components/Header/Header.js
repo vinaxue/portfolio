@@ -42,7 +42,7 @@ function Header({ variant = "hero" }) {
                         Vina Xue
                     </div>
                     <div className="subtitle">
-                        Full-Stack Developer | Yarn Enthusiast | ???
+                        Full-Stack Developer | Yarn Enthusiast
                     </div>
                 </>
             ) : null}
