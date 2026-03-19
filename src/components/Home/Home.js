@@ -14,7 +14,7 @@ function Home() {
                     When I'm not coding, you can find me untangling yarn or trying to keep my plants alive (this is a flop so far...).
                 </p>
                 <p>
-                    To learn more about me, check out my <Link to="/resume">resume</Link> or explore my <Link to="/dashboard">dashboard</Link> for some of behind the scenes.
+                    To learn more about me, check out my <Link to="/resume">resume</Link> or explore who I am <Link to="/about-me">here</Link>.
                 </p>
                 <p>
                     If you want to chat or connect, feel free to <Link to="/contact">reach out</Link>. I'm super nice I promise!

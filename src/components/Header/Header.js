@@ -8,7 +8,7 @@ import "./Header.css"
 function Header({ variant = "hero" }) {
     const links = [
         { name: "Home", path: "/home" },
-        { name: "Dashboard", path: "/dashboard" },
+        { name: "About Me", path: "/about-me" },
         { name: "Resume", path: "/resume" },
         { name: "Contact Me", path: "/contact" },
     ]

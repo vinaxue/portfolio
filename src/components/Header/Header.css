@@ -10,7 +10,7 @@
   min-height: 0;
   padding-top: 12px;
   padding-bottom: 16px;
-  background-color: var(--color-bg-primary);
+  background: transparent;
 }
 
 .header-compact .top-nav-bar {
@@ -28,7 +28,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 16px;
-  background-color: rgba(var(--color-bg-primary-rgb), 0.4);
+  background-color: rgba(var(--color-bg-dark-rgb), 0.4);
   backdrop-filter: blur(6px);
   border-radius: 6px;
 }
@@ -45,6 +45,7 @@
   font-family: "Simplifica", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.04em;
+  font-weight: bold;
 }
 
 .top-nav-items-hero a {

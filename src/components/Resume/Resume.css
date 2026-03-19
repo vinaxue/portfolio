@@ -18,4 +18,15 @@
   margin-top: 20px;
   font-size: 0.95rem;
   text-align: center;
+  color: #ffffff;
+}
+
+.resume-fallback-link {
+  color: var(--color-link-dark);
+}
+
+.resume-fallback-link:hover,
+.resume-fallback-link:focus {
+  color: var(--color-link-hover-dark);
+  font-weight: bold;
 }

@@ -12,7 +12,7 @@ function Resume() {
             />
             <p className="resume-fallback">
                 If the resume does not load, open it directly here:{' '}
-                <a href={resumePdf} target="_blank" rel="noopener noreferrer">View Resume PDF</a>
+                <a className="resume-fallback-link" href={resumePdf} target="_blank" rel="noopener noreferrer">View Resume PDF</a>
             </p>
         </div>
     )
