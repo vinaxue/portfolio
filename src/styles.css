@@ -1,15 +1,61 @@
-:root {
+:root,
+[data-theme="work"] {
   --color-bg-primary: #e7e5df;
-  --color-bg-primary-rgb: 231, 229, 223;
-  /* --color-bg-secondary: #f5f5f5; */
-
+  --color-bg-dark-rgb: 212, 201, 169;
   --color-text-primary: #2a2b2a;
-  /* --color-text-secondary: #666666; */
-
-  --color-link: #a76d60;
+  --color-link: #975b4d;
+  --color-link-dark: #e6c9c3;
   --color-link-hover: #7a8450;
-  /* --color-link-visited: #663399; */
-
+  --color-link-hover-dark: #e7e5df;
   --color-emphasize: #548687;
-  /* --color-emphasize-light: #ffa366; */
+  --color-surface: #f5f3ed;
+  --color-surface-soft: #fcfbf8;
+  --color-surface-accent: #ece8de;
+  --color-border-soft: rgba(42, 43, 42, 0.2);
+  --color-canvas-tint: #e8efe9;
+  --color-footer-bg: #cec9ba;
+  --color-story-vibrant-start: #f7eadd;
+  --color-story-vibrant-end: #d8eef9;
+}
+
+[data-theme="life"] {
+  --color-bg-dark-rgb: 26, 26, 46;
+  --color-text-primary: #2a2b2a;
+  --color-link: #a78bca;
+  --color-link-hover: #7ec8e3;
+  --color-emphasize: #7ec8e3;
+  --color-surface-soft: #2b2f49;
+  --color-border-soft: rgba(224, 224, 224, 0.22);
+  --color-canvas-tint: #353d5f;
+  --color-footer-bg: #3a4168;
+  --color-story-vibrant-start: #3f315f;
+  --color-story-vibrant-end: #2d5a73;
+  --color-dashboard-life-canvas-border: #f3bfd9;
+  --color-dashboard-life-canvas-start: #fff7fb;
+  --color-dashboard-life-canvas-middle: #fef6df;
+  --color-dashboard-life-canvas-end: #eef9ff;
+  --color-dashboard-life-bloom-one: rgba(255, 179, 217, 0.42);
+  --color-dashboard-life-bloom-two: rgba(255, 224, 138, 0.34);
+  --color-dashboard-life-bloom-three: rgba(160, 224, 255, 0.28);
+  --color-dashboard-life-bloom-four: rgba(201, 241, 199, 0.26);
+  --color-dashboard-life-card-start: rgba(255, 255, 255, 0.96);
+  --color-dashboard-life-card-end: rgba(255, 247, 252, 0.92);
+  --color-dashboard-life-card-border: rgba(239, 177, 210, 0.8);
+  --color-dashboard-life-card-shadow: rgba(215, 151, 190, 0.16);
+  --color-dashboard-life-header-start: #ffd9ec;
+  --color-dashboard-life-header-end: #ffecc3;
+  --color-dashboard-life-title: #b44884;
+  --color-dashboard-life-body-text: #5d4a62;
+  --color-dashboard-life-link: #d45a9a;
+  --color-dashboard-life-link-hover: #9e4ed0;
+  --color-dashboard-life-chip-start: #ffd8ee;
+  --color-dashboard-life-chip-end: #dff4ff;
+  --color-dashboard-life-chip-text: #714d71;
+  --color-dashboard-life-story-start: rgba(255, 223, 240, 0.95);
+  --color-dashboard-life-story-end: rgba(226, 245, 255, 0.92);
+  --color-dashboard-life-story-shadow: rgba(216, 165, 198, 0.22);
+  --color-dashboard-life-story-badge: #ff8cbf;
+  --color-dashboard-life-story-badge-text: #fffafc;
+  --color-dashboard-life-story-strong: #9a3f78;
+  --color-dashboard-life-story-strong-bg: rgba(255, 255, 255, 0.72);
 }

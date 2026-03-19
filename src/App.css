@@ -1,15 +1,10 @@
 .content {
   line-height: 25px;
-  height: 60vh;
   text-align: center;
   position: relative;
 }
 
 .content-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
   font-size: medium;
   line-height: 30px;
 }
@@ -26,10 +21,25 @@ a:focus {
 }
 
 .App {
+  min-height: 100vh;
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
-  background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+}
+
+.page-shell {
+  box-sizing: border-box;
+}
+
+.page-shell-hero {
+  --page-top-offset: clamp(150px, 14vh, 150px);
+  padding-top: var(--page-top-offset);
+}
+
+.page-shell-compact {
+  --page-top-offset: 24px;
+  padding-top: var(--page-top-offset);
 }
 
 .App-logo {
