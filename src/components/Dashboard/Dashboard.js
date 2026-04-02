@@ -22,9 +22,22 @@ const WORK_CARDS = [
         listItems: [
             { label: "The Goal:", text: "Creating a relaxing experience with simple, satisfying interactions." },
             { label: "Learning:", text: "GDScript, scene-tree architecture, and pixel art." },
-            { label: "Current Focus:", text: "Create a fun playable loop for the base game." },
+            { label: "Current Focus:", text: "Defining the core mechanics and interactions for the game." },
         ],
         chips: ["Godot Engine", "GDScript", "Game Design Basics", "Pixel Art", "Problem Solving"],
+    },
+    {
+        id: "current-project",
+        header: "Current Project",
+        title: "Exploring more frontend frameworks and tech-stacks",
+        text: "I realized I need to get more comfortable with frontend development outside of React, so I'm exploring various frontend frameworks and tech-stacks to broaden my skills.",
+        footer: "Now - ???",
+        listItems: [
+            { label: "The Goal:", text: "Becoming proficient in various frontend frameworks and tech-stacks." },
+            { label: "Learning:", text: "Exploring different frontend frameworks, state management solutions, and build tools." },
+            { label: "Current Focus:", text: "Learning Angular and .NET through devchallenges.io" },
+        ],
+        chips: ["Angular", ".NET", "frontend frameworks"],
     },
     {
         id: "swe-intern-june",
